@@ -1,4 +1,4 @@
-import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
+import { FETCH_ALL, CREATE, UPDATE, DELETE, COUNT } from '../constants/actionTypes';
 import * as api from '../api/index.js';
 
 export const getPosts = () => async (dispatch) => {
@@ -31,13 +31,13 @@ export const updatePost = (id, post) => async (dispatch) => {
   }
 };
 
-export const likePost = (id) => async (dispatch) => {
+export const setCount = (id) => async (dispatch) => {
   const user = JSON.parse(localStorage.getItem('profile'));
 
   try {
-    const { data } = await api.likePost(id, user?.token);
+    const { data } = await api.setCount(id, user?.token);
 
-    dispatch({ type: LIKE, payload: data });
+    dispatch({ type: COUNT, payload: data });
   } catch (error) {
     console.log(error);
   }

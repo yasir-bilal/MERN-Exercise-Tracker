@@ -22,14 +22,16 @@ export default makeStyles((theme) => ({
   buttonSubmit: {
     marginBottom: 10,
     color: "Black",
-    backgroundColor: "white",
+    backgroundColor: "orange",
   },
   date: {
     
-    borderBlock: 'outline, solid',
-    width: '80%',
+    
+    width: '90%',
     marginTop: 10,
     paddingTop: 10,
+    borderStyle: 'solid ',
+    display:'flex',
 
   }
 }));

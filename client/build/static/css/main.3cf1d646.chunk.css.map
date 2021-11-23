@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACI,wBAAyB,CACzB,kBAAmB,CACnB,gCAAkC,CAClC,aAAc,CACV,cAAgB","file":"main.3cf1d646.chunk.css","sourcesContent":["body {\n    background-repeat: repeat;\n    background: #f5f5f5;\n    font-family: \"Poppins\", sans-serif;\n    color: #5b626b;\n        font-size: 13px;}\n    "]}
